@@ -1,0 +1,83 @@
+/* ============================================================
+   PARCOURS HOMMES — COLOR TOKENS
+   A masculine palette built independently of Émilie Naturelle's
+   core brand colors (per brand direction: new palette, not carried
+   over). Ink-black + bone paper as the base duo (from brand
+   reference lockups), with an ember/rust primary accent and a
+   deep forest secondary — confident, grounded, no gradients.
+   ============================================================ */
+
+:root {
+  /* ---- Base ramp: Ink (near-black, warm undertone) ---- */
+  --ink-950: #08080a;
+  --ink-900: #111113;
+  --ink-800: #1b1b1e;
+  --ink-700: #26262a;
+  --ink-600: #35353a;
+
+  /* ---- Base ramp: Steel (cool neutral grays) ---- */
+  --steel-500: #6b6b70;
+  --steel-400: #8c8c90;
+  --steel-300: #b3b3b6;
+
+  /* ---- Base ramp: Bone (warm paper/cream) ---- */
+  --bone-50: #faf7ef;
+  --bone-100: #f2ecdc;
+  --bone-200: #e6ddc6;
+  --bone-300: #d3c6a5;
+
+  /* ---- Accent: Ember (rust/burnt orange — primary, energy/CTA) ---- */
+  --ember-700: #7c2a10;
+  --ember-600: #9c3714;
+  --ember-500: #c4451c;
+  --ember-400: #dd5c30;
+  --ember-300: #e88a5f;
+
+  /* ---- Accent: Forest (deep green — secondary, calm/data/positive) ---- */
+  --forest-700: #17251c;
+  --forest-600: #22392b;
+  --forest-500: #34503d;
+  --forest-400: #4d6f57;
+  --forest-300: #86a493;
+
+  /* ---- Semantic: surfaces ---- */
+  --surface-canvas: var(--ink-950);
+  --surface-canvas-raised: var(--ink-900);
+  --surface-card: var(--ink-800);
+  --surface-card-hover: var(--ink-700);
+  --surface-paper: var(--bone-100);
+  --surface-paper-raised: var(--bone-50);
+  --surface-overlay: rgba(8, 8, 10, 0.86);
+
+  /* ---- Semantic: text ---- */
+  --text-primary: var(--bone-100);
+  --text-secondary: var(--steel-300);
+  --text-tertiary: var(--steel-500);
+  --text-on-paper: var(--ink-950);
+  --text-on-paper-secondary: var(--ink-600);
+  --text-accent: var(--ember-400);
+  --text-inverse: var(--ink-950);
+
+  /* ---- Semantic: borders ---- */
+  --border-subtle: rgba(242, 236, 220, 0.10);
+  --border-default: rgba(242, 236, 220, 0.16);
+  --border-strong: rgba(242, 236, 220, 0.28);
+  --border-on-paper: rgba(17, 17, 19, 0.14);
+  --border-accent: var(--ember-500);
+
+  /* ---- Semantic: interactive ---- */
+  --accent-primary: var(--ember-500);
+  --accent-primary-hover: var(--ember-400);
+  --accent-primary-active: var(--ember-600);
+  --accent-secondary: var(--forest-500);
+  --accent-secondary-hover: var(--forest-400);
+  --focus-ring: var(--ember-400);
+
+  /* ---- Semantic: status ---- */
+  --status-positive: var(--forest-400);
+  --status-positive-bg: rgba(77, 111, 87, 0.16);
+  --status-watch: #c99a3c;
+  --status-watch-bg: rgba(201, 154, 60, 0.16);
+  --status-alert: #b8482c;
+  --status-alert-bg: rgba(184, 72, 44, 0.16);
+}

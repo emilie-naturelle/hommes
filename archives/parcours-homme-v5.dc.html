@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="uploads/Favicon (fond noir 1500 x 1500px).png">
+  <link rel="stylesheet" href="_ds/parcours-hommes-design-system-b918b4c2-2bba-4c9d-b6aa-1bd677c8522d/tokens/colors.css">
+  <link rel="stylesheet" href="_ds/parcours-hommes-design-system-b918b4c2-2bba-4c9d-b6aa-1bd677c8522d/tokens/typography.css">
+  <link rel="stylesheet" href="_ds/parcours-hommes-design-system-b918b4c2-2bba-4c9d-b6aa-1bd677c8522d/tokens/spacing.css">
+  <link rel="stylesheet" href="_ds/parcours-hommes-design-system-b918b4c2-2bba-4c9d-b6aa-1bd677c8522d/tokens/effects.css">
+  <link rel="stylesheet" href="_ds/parcours-hommes-design-system-b918b4c2-2bba-4c9d-b6aa-1bd677c8522d/base.css">
+  <link rel="stylesheet" href="_ds/parcours-hommes-design-system-b918b4c2-2bba-4c9d-b6aa-1bd677c8522d/styles.css">
+  <script src="_ds/parcours-hommes-design-system-b918b4c2-2bba-4c9d-b6aa-1bd677c8522d/_ds_bundle.js"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { background: #08080a; overflow-x: hidden; }
+    a { color: var(--bone-100); }
+    a:hover { color: var(--ember-400); }
+    @keyframes ph-cue {
+      0% { transform: scaleY(0); transform-origin: top; }
+      45% { transform: scaleY(1); transform-origin: top; }
+      55% { transform: scaleY(1); transform-origin: bottom; }
+      100% { transform: scaleY(0); transform-origin: bottom; }
+    }
+  </style>
+  <template id="__bundler_thumbnail" data-bg-color="#08080a">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+      <rect width="200" height="200" fill="#08080a"></rect>
+      <text x="100" y="118" text-anchor="middle" font-family="Anton, Impact, sans-serif" font-size="58" fill="#c4451c">PH</text>
+    </svg>
+  </template>
+</helmet>
+
+<div style="background: var(--surface-canvas); color: var(--text-primary); font-family: var(--font-body);">
+
+  <!-- ============ HERO ============ -->
+  <section data-screen-label="Hero" class="grain" style="position: relative; min-height: 100svh; display: flex; flex-direction: column; overflow: hidden;">
+
+    <div aria-hidden="true" id="heroBg" style="position: absolute; z-index: 1; right: clamp(16px, 4vw, 64px); bottom: clamp(24px, 6vh, 72px); display: flex; flex-direction: column; align-items: flex-end; gap: 4px; pointer-events: none;">
+      <span data-hero="" style="font-family: var(--font-mono); font-size: clamp(11px, 1.2vw, 13px); letter-spacing: 0.12em; color: var(--text-tertiary);">RÉG. <span style="text-decoration: line-through;">777 $</span></span>
+      <span style="font-family: var(--font-display); font-size: clamp(160px, 26vw, 460px); line-height: 0.9; color: var(--ink-800); user-select: none;">599</span>
+      <span data-hero="" style="font-family: var(--font-mono); font-size: clamp(11px, 1.2vw, 13px); letter-spacing: 0.12em; color: var(--ember-400);">599 $ · + TX</span>
+    </div>
+
+    <header style="position: relative; z-index: 3; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; padding: clamp(18px, 3vw, 28px) clamp(20px, 5vw, 56px); border-bottom: 1px solid var(--border-subtle);">
+      <div style="display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap;">
+        <span style="font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-secondary);">Émilie Naturelle</span>
+        <span style="width: 24px; height: 1px; background: var(--border-strong); align-self: center;"></span>
+        <span style="font-family: var(--font-display); font-size: 17px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--bone-100);">Parcours Homme</span>
+      </div>
+      <span style="font-family: var(--font-mono); font-size: 13px; color: var(--ember-400); border: 1px solid var(--border-default); padding: 6px 12px; border-radius: var(--radius-sm); display: flex; align-items: baseline; gap: 8px; white-space: nowrap; flex-wrap: nowrap;"><span style="text-decoration: line-through; color: var(--text-tertiary);">777 $</span><span>599 $ + TX</span></span>
+    </header>
+
+    <div id="heroInner" style="position: relative; z-index: 2; flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 0 clamp(20px, 5vw, 56px) clamp(64px, 10vh, 120px);">
+      <div data-hero="" style="display: flex; align-items: center; gap: 14px; margin-bottom: clamp(20px, 3vh, 36px);">
+        <span style="font-family: var(--font-mono); font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-secondary);">Ce qui se passe en dedans, en chiffres</span>
+      </div>
+      <h1 style="display: flex; flex-direction: column;">
+        <span style="display: block; overflow: hidden;"><span data-hero-line="" style="display: block; font-size: clamp(56px, 12.5vw, 172px); line-height: 1.02; color: var(--bone-100);">Teste.</span></span>
+        <span style="display: block; overflow: hidden;"><span data-hero-line="" style="display: block; font-size: clamp(56px, 12.5vw, 172px); line-height: 1.02; color: var(--bone-100);">Comprends.</span></span>
+        <span style="display: block; overflow: hidden;"><span data-hero-line="" style="display: block; font-size: clamp(56px, 12.5vw, 172px); line-height: 1.02; color: var(--ember-500);">Transforme.</span></span>
+      </h1>
+      <p data-hero="" style="max-width: 560px; font-size: clamp(17px, 2vw, 21px); line-height: 1.6; color: var(--steel-300); margin-top: clamp(24px, 4vh, 40px);"><strong style="color: var(--bone-100); font-weight: 700;">Hormones, minéraux, stress, énergie — tout ça se parle dans ton corps.</strong> On regarde comment le tien fonctionne, avec tes vraies données. Prélevé chez toi, pas d'aiguille.</p>
+      <div data-hero="" style="display: flex; align-items: center; gap: 22px; flex-wrap: wrap; margin-top: clamp(28px, 4vh, 44px);">
+        <x-import component-from-global-scope="ParcoursHommesDesignSystem_b918b4.Button" variant="primary" size="lg" on-click="{{ goPrix }}" hint-size="auto,54px">COMMENCE TON PARCOURS</x-import>
+        <button type="button" onClick="{{ goTests }}" style="background: transparent; border: none; padding: 0; cursor: pointer; font-family: var(--font-mono); font-size: 13px; letter-spacing: 0.08em; color: var(--bone-100); border-bottom: 1px solid var(--border-strong); padding-bottom: 4px;">VOIR LES TESTS ↓</button>
+      </div>
+      <p data-hero="" style="font-family: var(--font-mono); font-size: 12px; color: var(--text-tertiary); margin-top: 16px;"><span style="text-decoration: line-through;">777 $</span> 599 $ + taxes · paiement unique · livré chez toi</p>
+    </div>
+
+    <div id="scrollCue" style="position: absolute; z-index: 2; bottom: 28px; left: 50%; transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; gap: 10px; transition: opacity 0.4s ease;">
+      <span style="font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.18em; color: var(--text-tertiary);">DÉFILE</span>
+      <span style="display: block; width: 1px; height: 44px; background: var(--ember-500); animation: ph-cue 1.8s ease-in-out infinite;"></span>
+    </div>
+  </section>
+
+  <!-- ============ 01 — CE QUE TON CORPS TE DIT (pinned) ============ -->
+  <div id="probWrap" data-screen-label="Le problème" style="position: relative; padding: clamp(48px, 8vh, 88px) clamp(20px, 6vw, 96px) clamp(56px, 9vh, 96px);">
+    <div style="display: flex; flex-direction: column;">
+      <div style="display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: clamp(24px, 4vh, 48px);">
+        <div style="display: flex; align-items: center; gap: 14px;">
+          <span style="width: 40px; height: 1px; background: var(--border-strong);"></span>
+          <span style="font-family: var(--font-mono); font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-tertiary);">Le problème</span>
+        </div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: clamp(10px, 1.8vh, 20px);">
+        <span data-line="" style="font-family: var(--font-display); text-transform: uppercase; line-height: 0.98; font-size: clamp(32px, 5.4vw, 74px); color: var(--ink-700); transition: color 0.22s ease, transform 0.22s ease;">Un podcast t'a dit de prendre du magnésium.</span>
+        <span data-line="" style="font-family: var(--font-display); text-transform: uppercase; line-height: 0.98; font-size: clamp(32px, 5.4vw, 74px); color: var(--ink-700); transition: color 0.22s ease, transform 0.22s ease;">Un autre, de l'ashwagandha.</span>
+        <span data-line="" style="font-family: var(--font-display); text-transform: uppercase; line-height: 0.98; font-size: clamp(32px, 5.4vw, 74px); color: var(--ink-700); transition: color 0.22s ease, transform 0.22s ease;">Un troisième, de jeûner jusqu'à midi.</span>
+        <span data-line="" style="font-family: var(--font-display); text-transform: uppercase; line-height: 0.98; font-size: clamp(32px, 5.4vw, 74px); color: var(--ink-700); transition: color 0.22s ease, transform 0.22s ease;">Aucun t'a regardé, toi.</span>
+        <span data-line="" data-line-final="" style="font-family: var(--font-display); text-transform: uppercase; line-height: 0.98; font-size: clamp(32px, 5.4vw, 74px); color: var(--ink-700); transition: color 0.22s ease, transform 0.22s ease; margin-top: clamp(16px, 3vh, 32px);">C'est là que ça commence.</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ GRILLE ÉCOSYSTÈME ============ -->
+  <section id="tests" data-screen-label="La réponse" style="padding: clamp(32px, 5vh, 56px) clamp(20px, 5vw, 56px) clamp(96px, 14vh, 160px); background: var(--surface-canvas);">
+    <div style="max-width: 1200px; margin: 0 auto;">
+
+      <div data-reveal="" style="display: flex; align-items: center; justify-content: space-between; gap: 16px; border-top: 2px solid var(--border-strong); padding-top: 18px; margin-bottom: 24px;">
+        <div style="display: flex; align-items: center; gap: 14px;">
+          <span style="width: 40px; height: 1px; background: var(--border-strong);"></span>
+          <span style="font-family: var(--font-mono); font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-tertiary);">La réponse</span>
+        </div>
+        <span style="font-family: var(--font-mono); font-size: 12px; color: var(--text-tertiary);">TESTS · ANALYSE · PLAN</span>
+      </div>
+      <h2 data-reveal="" style="font-size: clamp(40px, 6.5vw, 92px); color: var(--bone-100); max-width: 900px;">Le <span style="color: var(--ember-500);">Parcours Homme</span>.</h2>
+      <p data-reveal="" style="max-width: 680px; font-size: clamp(17px, 2vw, 21px); line-height: 1.55; color: var(--steel-300); margin-top: 24px;">Deux tests, faits chez toi, envoyés au labo — tes hormones, tes minéraux. Tu repars avec un plan fait pour toi, pas un autre article générique.</p>
+
+      <!-- DIMENSIONS DE L'ÉCOSYSTÈME -->
+      <div data-reveal="" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 270px), 1fr)); border-right: 1px solid var(--border-strong); border-bottom: 1px solid var(--border-strong); margin-top: clamp(40px, 6vh, 64px);">
+        <div style="display: grid; grid-template-rows: auto 1fr; gap: 16px; border-top: 1px solid var(--border-strong); border-left: 1px solid var(--border-strong); background: var(--surface-canvas); padding: clamp(24px, 3vw, 36px);">
+          <span style="font-family: var(--font-display); text-transform: uppercase; font-size: clamp(26px, 2.6vw, 40px); line-height: 1.05; color: var(--bone-100); overflow-wrap: break-word;">ÉNERGIE</span>
+          <p style="color: var(--steel-300); line-height: 1.55; font-size: 16px;">Tu te réveilles brûlé même après huit heures de sommeil? C'est pas en prenant un café de plus.</p>
+        </div>
+        <div style="display: grid; grid-template-rows: auto 1fr; gap: 16px; border-top: 1px solid var(--border-strong); border-left: 1px solid var(--border-strong); background: var(--surface-canvas); padding: clamp(24px, 3vw, 36px);">
+          <span style="font-family: var(--font-display); text-transform: uppercase; font-size: clamp(26px, 2.6vw, 40px); line-height: 1.05; color: var(--bone-100); overflow-wrap: break-word;">STRESS &amp; RÉCUPÉRATION</span>
+          <p style="color: var(--steel-300); line-height: 1.55; font-size: 16px;">Est-ce que tu encaisses, ou tu récupères vraiment? Deux choses différentes.</p>
+        </div>
+        <div style="display: grid; grid-template-rows: auto 1fr; gap: 16px; border-top: 1px solid var(--border-strong); border-left: 1px solid var(--border-strong); background: var(--surface-canvas); padding: clamp(24px, 3vw, 36px);">
+          <span style="font-family: var(--font-display); text-transform: uppercase; font-size: clamp(26px, 2.6vw, 40px); line-height: 1.05; color: var(--bone-100); overflow-wrap: break-word;">DRIVE</span>
+          <p style="color: var(--steel-300); line-height: 1.55; font-size: 16px;">Libido, motivation, envie de te lever le matin — c'est pas juste une question de volonté.</p>
+        </div>
+        <div style="display: grid; grid-template-rows: auto 1fr; gap: 16px; border-top: 1px solid var(--border-strong); border-left: 1px solid var(--border-strong); background: var(--surface-canvas); padding: clamp(24px, 3vw, 36px);">
+          <span style="font-family: var(--font-display); text-transform: uppercase; font-size: clamp(26px, 2.6vw, 40px); line-height: 1.05; color: var(--bone-100); overflow-wrap: break-word;">PERFORMANCE</span>
+          <p style="color: var(--steel-300); line-height: 1.55; font-size: 16px;">Tu pousses fort à l'entraînement. Reste à voir si ton corps suit.</p>
+        </div>
+        <div style="grid-column: 1 / -1; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: clamp(24px, 4vw, 64px); align-items: start; border-top: 1px solid var(--border-strong); border-left: 1px solid var(--border-strong); background: var(--ember-400); padding: clamp(28px, 4vw, 44px) clamp(24px, 3vw, 36px);">
+          <h3 style="font-size: clamp(28px, 3.2vw, 44px); line-height: 1.05; color: #08080a;">Tout ça, c'est un ensemble.</h3>
+          <p style="color: rgba(8, 8, 10, 0.8); line-height: 1.55; font-size: 16px; max-width: 460px;">Ton énergie dépend de ton stress. Ton stress dépend de ta récupération. Ta drive suit tout ça. Et ta performance montre si le reste tient debout. Émilie regarde la boucle au complet — pas un chiffre à la fois.</p>
+        </div>
+      </div>
+
+      <p data-reveal="" style="font-family: var(--font-mono); font-size: 12px; line-height: 1.7; color: var(--text-tertiary); margin-top: 20px;">MESURÉ DANS TES DONNÉES — testostérone · estradiol · DHEA-S · cortisol matinal · 19 minéraux (≈ 3 mois de tendances)</p>
+      <p data-reveal="" style="max-width: 620px; font-family: var(--font-mono); font-size: 12px; line-height: 1.6; color: var(--text-tertiary); margin-top: 12px;">Outils d'observation à visée éducative, complémentaires à ton suivi médical — aucun diagnostic, aucune prescription. Art. 31, Loi médicale du Québec.</p>
+
+
+    </div>
+  </section>
+
+  <!-- ============ DÉROULEMENT ============ -->
+  <section data-screen-label="Déroulement" style="padding: clamp(96px, 14vh, 160px) clamp(20px, 5vw, 56px); background: var(--surface-canvas);">
+    <div style="max-width: 1000px; margin: 0 auto;">
+      <div data-reveal="" style="display: flex; align-items: center; justify-content: space-between; gap: 16px; border-top: 2px solid var(--border-strong); padding-top: 18px; margin-bottom: 24px;">
+        <div style="display: flex; align-items: center; gap: 14px;">
+          <span style="width: 40px; height: 1px; background: var(--border-strong);"></span>
+          <span style="font-family: var(--font-mono); font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-tertiary);">Le déroulement</span>
+        </div>
+        <span style="font-family: var(--font-mono); font-size: 12px; color: var(--text-tertiary);">4 ÉTAPES</span>
+      </div>
+      <h2 data-reveal="" style="font-size: clamp(40px, 6.5vw, 92px); color: var(--bone-100);">Quatre étapes. Zéro salle d'attente.</h2>
+
+      <div id="railWrap" style="position: relative; margin-top: clamp(48px, 8vh, 80px); padding-left: clamp(32px, 5vw, 56px);">
+        <div style="position: absolute; left: 9px; top: 8px; bottom: 8px; width: 2px; background: var(--ink-700);"></div>
+        <div id="railFill" style="position: absolute; left: 9px; top: 8px; width: 2px; height: 0%; max-height: calc(100% - 16px); background: var(--ember-500); transition: height 0.2s linear;"></div>
+
+        <div style="display: flex; flex-direction: column; gap: clamp(48px, 8vh, 72px);">
+          <div data-reveal="" style="display: flex; flex-direction: column; gap: 10px; position: relative;">
+            <span style="position: absolute; left: calc(-1 * clamp(32px, 5vw, 56px) + 3px); top: 6px; width: 14px; height: 14px; background: var(--surface-canvas); border: 2px solid var(--ember-500);"></span>
+            <span style="font-family: var(--font-mono); font-size: 13px; color: var(--ember-400);">COMMANDE</span>
+            <h3 style="font-size: clamp(26px, 3.4vw, 44px); color: var(--bone-100);">Commande</h3>
+            <p style="max-width: 520px; color: var(--steel-300); line-height: 1.55;">Tu commandes en ligne. Les kits arrivent chez toi avec les instructions.</p>
+          </div>
+          <div data-reveal="" style="display: flex; flex-direction: column; gap: 10px; position: relative;">
+            <span style="position: absolute; left: calc(-1 * clamp(32px, 5vw, 56px) + 3px); top: 6px; width: 14px; height: 14px; background: var(--surface-canvas); border: 2px solid var(--ember-500);"></span>
+            <span style="font-family: var(--font-mono); font-size: 13px; color: var(--ember-400);">PRÉLÈVE</span>
+            <h3 style="font-size: clamp(26px, 3.4vw, 44px); color: var(--bone-100);">Prélève</h3>
+            <p style="max-width: 520px; color: var(--steel-300); line-height: 1.55;">Quelques cheveux (ou ongles) et un échantillon de salive le matin, chez toi. Pas de prise de sang, aucune aiguille. Tu retournes le tout par la poste.</p>
+          </div>
+          <div data-reveal="" style="display: flex; flex-direction: column; gap: 10px; position: relative;">
+            <span style="position: absolute; left: calc(-1 * clamp(32px, 5vw, 56px) + 3px); top: 6px; width: 14px; height: 14px; background: var(--surface-canvas); border: 2px solid var(--ember-500);"></span>
+            <span style="font-family: var(--font-mono); font-size: 13px; color: var(--ember-400);">LABORATOIRE</span>
+            <h3 style="font-size: clamp(26px, 3.4vw, 44px); color: var(--bone-100);">Traitement en laboratoire</h3>
+            <p style="max-width: 520px; color: var(--steel-300); line-height: 1.55;">Laboratoire spécialisé. Tes échantillons deviennent des données.</p>
+          </div>
+          <div data-reveal="" style="display: flex; flex-direction: column; gap: 10px; position: relative;">
+            <span style="position: absolute; left: calc(-1 * clamp(32px, 5vw, 56px) + 3px); top: 6px; width: 14px; height: 14px; background: var(--ember-500); border: 2px solid var(--ember-500);"></span>
+            <span style="font-family: var(--font-mono); font-size: 13px; color: var(--ember-400);">APPLIQUE</span>
+            <h3 style="font-size: clamp(26px, 3.4vw, 44px); color: var(--bone-100);">Applique</h3>
+            <p style="max-width: 520px; color: var(--steel-300); line-height: 1.55;">Émilie lit tes données et t'envoie tes résultats expliqués, plus ton plan. Prêt à suivre.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ LE PROTOCOLE (paper break) ============ -->
+  <section data-screen-label="Protocole" class="grain" style="background: var(--surface-paper); color: var(--text-on-paper); padding: clamp(96px, 14vh, 160px) clamp(20px, 5vw, 56px);">
+    <div style="max-width: 1200px; margin: 0 auto;">
+      <div data-reveal="" style="display: flex; align-items: center; justify-content: space-between; gap: 16px; border-top: 2px solid var(--border-on-paper); padding-top: 18px; margin-bottom: 24px;">
+        <div style="display: flex; align-items: center; gap: 14px;">
+          <span style="width: 40px; height: 1px; background: var(--border-on-paper);"></span>
+          <span style="font-family: var(--font-mono); font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-on-paper-secondary);">Ce que tu reçois</span>
+        </div>
+        <span style="font-family: var(--font-mono); font-size: 12px; color: var(--text-on-paper-secondary);">4 LIVRABLES</span>
+      </div>
+      <h2 data-reveal="" style="font-size: clamp(40px, 6.5vw, 92px); color: var(--ink-950); max-width: 980px;">Pas un diagnostic. Un plan de match.</h2>
+      <p data-reveal="" style="max-width: 600px; color: var(--text-on-paper-secondary); font-size: 18px; line-height: 1.55; margin-top: 24px;">Tes résultats arrivent avec un plan d'habitudes de vie personnalisé, bâti sur tes données. Des pistes concrètes et expliquées, pas des chiffres à décoder seul.</p>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1px; background: var(--border-on-paper); border: 1px solid var(--border-on-paper); margin-top: clamp(48px, 8vh, 80px);">
+        <div data-reveal="" style="background: var(--surface-paper); padding: clamp(24px, 3vw, 40px); display: flex; flex-direction: column; gap: 14px;">
+          <h3 style="font-size: clamp(22px, 2.2vw, 30px); color: var(--ink-950);">Tes résultats, expliqués</h3>
+          <p style="color: var(--text-on-paper-secondary); line-height: 1.55;">Chaque marqueur décodé simplement, avec ce qui mérite ton attention.</p>
+        </div>
+        <div data-reveal="" data-reveal-delay="80" style="background: var(--surface-paper); padding: clamp(24px, 3vw, 40px); display: flex; flex-direction: column; gap: 14px;">
+          <h3 style="font-size: clamp(22px, 2.2vw, 30px); color: var(--ink-950);">Tes priorités, classées</h3>
+          <p style="color: var(--text-on-paper-secondary); line-height: 1.55;">Les leviers d'habitudes de vie qui comptent le plus, dans l'ordre.</p>
+        </div>
+        <div data-reveal="" data-reveal-delay="160" style="background: var(--surface-paper); padding: clamp(24px, 3vw, 40px); display: flex; flex-direction: column; gap: 14px;">
+          <h3 style="font-size: clamp(22px, 2.2vw, 30px); color: var(--ink-950);">Des pistes concrètes</h3>
+          <p style="color: var(--text-on-paper-secondary); line-height: 1.55;">Alimentation, sommeil, mouvement — des suggestions claires, à intégrer à ton rythme.</p>
+        </div>
+        <div data-reveal="" data-reveal-delay="240" style="background: var(--surface-paper); padding: clamp(24px, 3vw, 40px); display: flex; flex-direction: column; gap: 14px;">
+          <h3 style="font-size: clamp(22px, 2.2vw, 30px); color: var(--ink-950);">Des repères sur 90 jours</h3>
+          <p style="color: var(--text-on-paper-secondary); line-height: 1.55;">Des objectifs personnels que tu peux suivre pour voir ton évolution.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ QUI EST DERRIÈRE ============ -->
+  <section data-screen-label="Émilie" style="padding: clamp(96px, 14vh, 160px) clamp(20px, 5vw, 56px); border-top: 1px solid var(--border-subtle);">
+    <div style="max-width: 1080px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: clamp(40px, 6vw, 80px); align-items: center;">
+      <div data-reveal="" style="display: flex; justify-content: center;">
+        <img src="uploads/_A742189.jpg" alt="Émilie Gendron, naturopathe" style="width: 100%; max-width: 380px; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 22%; display: block; border: 1px solid var(--border-default); border-radius: 6px;">
+      </div>
+      <div data-reveal="" data-reveal-delay="120" style="display: flex; flex-direction: column; gap: 22px;">
+        <div style="display: flex; align-items: center; gap: 14px;">
+          <span style="width: 40px; height: 1px; background: var(--border-strong);"></span>
+          <span style="font-family: var(--font-mono); font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-tertiary);">La signature</span>
+        </div>
+        <h2 style="font-size: clamp(34px, 5vw, 64px); color: var(--bone-100);">Qui lit tes résultats</h2>
+        <p style="color: var(--steel-300); font-size: 18px; line-height: 1.6; max-width: 520px;">Émilie Gendron. Naturopathe diplômée depuis 2021. Ancienne athlète de haut niveau — équipe nationale canadienne de handball. Elle sait ce que c'est, un corps qu'on pousse et des données qu'on suit.</p>
+        <p style="color: var(--text-tertiary); line-height: 1.6; max-width: 520px;">Sa conviction, après des années sur le terrain : la simplicité bat les protocoles compliqués. C'est elle qui lit tes données et bâtit ton plan. Pas un algorithme. Une vraie personne qui regarde tes résultats.</p>
+        <span style="font-family: var(--font-display); font-size: clamp(30px, 4vw, 44px); color: var(--ember-500); margin-top: 8px;">Émilie</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRIX (registre) ============ -->
+  <section id="prix" data-screen-label="Prix" style="padding: clamp(96px, 14vh, 160px) clamp(20px, 5vw, 56px); border-top: 1px solid var(--border-subtle);">
+    <div style="max-width: 1080px; margin: 0 auto;">
+      <div data-reveal="" style="display: flex; align-items: center; justify-content: space-between; gap: 16px; border-top: 2px solid var(--border-strong); padding-top: 18px; margin-bottom: clamp(32px, 5vh, 56px);">
+        <div style="display: flex; align-items: center; gap: 14px;">
+          <span style="width: 40px; height: 1px; background: var(--border-strong);"></span>
+          <span style="font-family: var(--font-mono); font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-tertiary);">Le tarif</span>
+        </div>
+        <span style="font-family: var(--font-mono); font-size: 12px; color: var(--text-tertiary);">PAIEMENT UNIQUE</span>
+      </div>
+
+      <div data-reveal="" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: clamp(32px, 5vw, 72px); align-items: start;">
+        <div style="display: flex; flex-direction: column; gap: 18px;">
+          <h2 style="font-size: clamp(36px, 5vw, 64px); color: var(--bone-100);">Parcours Homme</h2>
+          <div style="display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap;">
+            <span style="font-family: var(--font-mono); font-size: clamp(24px, 3vw, 34px); line-height: 1; color: var(--text-tertiary); text-decoration: line-through; text-decoration-color: var(--ember-500);">777 $</span>
+            <span style="font-family: var(--font-display); font-size: clamp(64px, 9vw, 110px); line-height: 1; color: var(--bone-100);">599 $</span>
+            <span style="font-family: var(--font-mono); font-size: 16px; color: var(--text-tertiary);">+ taxes</span>
+          </div>
+          <p style="font-family: var(--font-mono); font-size: 14px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ember-400);">599 $ — paiement unique</p>
+          <p style="color: var(--steel-300); line-height: 1.55;">Tests, résultats, plan.</p>
+          <p style="font-family: var(--font-mono); font-size: 13px; color: var(--text-tertiary);">Pas de consultation. Pas d'abonnement. Pas de détour.</p>
+        </div>
+        <div style="display: flex; flex-direction: column;">
+          <div style="padding: 14px 0; border-top: 1px solid var(--border-subtle);"><span style="color: var(--text-primary);">Kit de prélèvement minéral (cheveux ou ongles)</span></div>
+          <div style="padding: 14px 0; border-top: 1px solid var(--border-subtle);"><span style="color: var(--text-primary);">Kit de prélèvement salivaire (le matin)</span></div>
+          <div style="padding: 14px 0; border-top: 1px solid var(--border-subtle);"><span style="color: var(--text-primary);">Traitement des échantillons en laboratoire inclus</span></div>
+          <div style="padding: 14px 0; border-top: 1px solid var(--border-subtle);"><span style="color: var(--text-primary);">Ton tableau de bord — profil minéral et marqueurs salivaires, lus ensemble</span></div>
+          <div style="padding: 14px 0; border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);"><span style="color: var(--text-primary);">Plan d'habitudes de vie personnalisé avec repères sur 90 jours</span></div>
+          <div style="margin-top: 24px;">
+            <x-import component-from-global-scope="ParcoursHommesDesignSystem_b918b4.Button" variant="primary" size="lg" full-width="{{ true }}" on-click="{{ fakeCheckout }}" hint-size="100%,54px">RÉSERVE TON PARCOURS — 599 $</x-import>
+          </div>
+          <p style="font-family: var(--font-mono); font-size: 11px; color: var(--text-tertiary); line-height: 1.5; margin-top: 14px;">Outils d'observation à visée éducative. Aucun diagnostic, aucune prescription, aucun traitement. Art. 31, Loi médicale du Québec.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section data-screen-label="FAQ" style="padding: 0 clamp(20px, 5vw, 56px) clamp(96px, 14vh, 160px);">
+    <div style="max-width: 760px; margin: 0 auto;">
+      <div data-reveal="" style="display: flex; align-items: center; justify-content: space-between; gap: 16px; border-top: 2px solid var(--border-strong); padding-top: 18px; margin-bottom: 24px;">
+        <div style="display: flex; align-items: center; gap: 14px;">
+          <span style="width: 40px; height: 1px; background: var(--border-strong);"></span>
+          <span style="font-family: var(--font-mono); font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-tertiary);">Questions directes</span>
+        </div>
+        <span style="font-family: var(--font-mono); font-size: 12px; color: var(--text-tertiary);">5 RÉPONSES</span>
+      </div>
+      <h2 data-reveal="" style="font-size: clamp(36px, 5vw, 64px); color: var(--bone-100); margin-bottom: clamp(32px, 5vh, 56px);">Réponses directes.</h2>
+
+      <div data-reveal="" style="border-top: 1px solid var(--border-subtle); display: flex; flex-direction: column;">
+        <div data-faq="" style="border-bottom: 1px solid var(--border-subtle);">
+          <button type="button" onClick="{{ toggleFaq }}" style="display: flex; align-items: center; gap: 16px; width: 100%; background: transparent; border: none; text-align: left; padding: 22px 0; cursor: pointer;">
+            <span style="font-size: 17px; font-weight: 600; color: var(--bone-100); flex: 1;">C'est quoi la différence avec une prise de sang?</span>
+            <span data-faq-arrow="" style="font-family: var(--font-mono); font-size: 20px; color: var(--ember-400); transition: transform 0.3s ease; flex: 0 0 auto;">+</span>
+          </button>
+          <div data-faq-body="" style="max-height: 0; overflow: hidden; opacity: 0; transition: max-height 0.35s ease, opacity 0.35s ease;">
+            <p style="padding: 0 0 22px; color: var(--steel-300); line-height: 1.6; max-width: 640px;">Les cheveux ou les ongles reflètent des tendances minérales sur environ trois mois. La salive, prélevée le matin, reflète tes marqueurs au moment où ton corps démarre sa journée. Deux angles éducatifs complémentaires au bilan sanguin, pas un remplacement.</p>
+          </div>
+        </div>
+        <div data-faq="" style="border-bottom: 1px solid var(--border-subtle);">
+          <button type="button" onClick="{{ toggleFaq }}" style="display: flex; align-items: center; gap: 16px; width: 100%; background: transparent; border: none; text-align: left; padding: 22px 0; cursor: pointer;">
+            <span style="font-size: 17px; font-weight: 600; color: var(--bone-100); flex: 1;">Est-ce un diagnostic médical?</span>
+            <span data-faq-arrow="" style="font-family: var(--font-mono); font-size: 20px; color: var(--ember-400); transition: transform 0.3s ease; flex: 0 0 auto;">+</span>
+          </button>
+          <div data-faq-body="" style="max-height: 0; overflow: hidden; opacity: 0; transition: max-height 0.35s ease, opacity 0.35s ease;">
+            <p style="padding: 0 0 22px; color: var(--steel-300); line-height: 1.6; max-width: 640px;">Non. Ce sont des outils d'observation à visée éducative. Aucun diagnostic, aucune prescription. Pour tout enjeu de santé, consulte ton médecin.</p>
+          </div>
+        </div>
+        <div data-faq="" style="border-bottom: 1px solid var(--border-subtle);">
+          <button type="button" onClick="{{ toggleFaq }}" style="display: flex; align-items: center; gap: 16px; width: 100%; background: transparent; border: none; text-align: left; padding: 22px 0; cursor: pointer;">
+            <span style="font-size: 17px; font-weight: 600; color: var(--bone-100); flex: 1;">C'est fiable, le test de cheveux ou d'ongles?</span>
+            <span data-faq-arrow="" style="font-family: var(--font-mono); font-size: 20px; color: var(--ember-400); transition: transform 0.3s ease; flex: 0 0 auto;">+</span>
+          </button>
+          <div data-faq-body="" style="max-height: 0; overflow: hidden; opacity: 0; transition: max-height 0.35s ease, opacity 0.35s ease;">
+            <p style="padding: 0 0 22px; color: var(--steel-300); line-height: 1.6; max-width: 640px;">L'analyse minérale des cheveux et des ongles est utilisée depuis longtemps comme outil d'observation du terrain. Sa portée est celle d'un indice de tendance, pas d'une mesure clinique. On l'utilise pour dégager des pistes, croisées avec le test salivaire, jamais pour poser un verdict.</p>
+          </div>
+        </div>
+        <div data-faq="" style="border-bottom: 1px solid var(--border-subtle);">
+          <button type="button" onClick="{{ toggleFaq }}" style="display: flex; align-items: center; gap: 16px; width: 100%; background: transparent; border: none; text-align: left; padding: 22px 0; cursor: pointer;">
+            <span style="font-size: 17px; font-weight: 600; color: var(--bone-100); flex: 1;">Il y a une consultation avec Émilie?</span>
+            <span data-faq-arrow="" style="font-family: var(--font-mono); font-size: 20px; color: var(--ember-400); transition: transform 0.3s ease; flex: 0 0 auto;">+</span>
+          </button>
+          <div data-faq-body="" style="max-height: 0; overflow: hidden; opacity: 0; transition: max-height 0.35s ease, opacity 0.35s ease;">
+            <p style="padding: 0 0 22px; color: var(--steel-300); line-height: 1.6; max-width: 640px;">Non. Ce parcours, c'est tests + résultats + plan d'habitudes de vie. Émilie lit tes données et bâtit ton plan, mais il n'y a pas de rencontre à l'agenda. Tout ce que tu dois savoir est écrit dedans, et tu l'appliques à ton rythme.</p>
+          </div>
+        </div>
+        <div data-faq="" style="border-bottom: 1px solid var(--border-subtle);">
+          <button type="button" onClick="{{ toggleFaq }}" style="display: flex; align-items: center; gap: 16px; width: 100%; background: transparent; border: none; text-align: left; padding: 22px 0; cursor: pointer;">
+            <span style="font-size: 17px; font-weight: 600; color: var(--bone-100); flex: 1;">Combien de temps avant mes résultats?</span>
+            <span data-faq-arrow="" style="font-family: var(--font-mono); font-size: 20px; color: var(--ember-400); transition: transform 0.3s ease; flex: 0 0 auto;">+</span>
+          </button>
+          <div data-faq-body="" style="max-height: 0; overflow: hidden; opacity: 0; transition: max-height 0.35s ease, opacity 0.35s ease;">
+            <p style="padding: 0 0 22px; color: var(--steel-300); line-height: 1.6; max-width: 640px;">Quelques semaines après la réception de tes échantillons au laboratoire. Le délai exact te sera confirmé à la commande.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FINALE ============ -->
+  <section data-screen-label="Finale" class="grain" style="min-height: 90svh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; gap: clamp(24px, 4vh, 40px); padding: clamp(96px, 14vh, 160px) clamp(20px, 5vw, 56px); background: {{ finaleBg }};">
+    <p data-reveal="" style="font-family: var(--font-mono); font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase; color: {{ finaleSub }};">Parcours Homme — <span style="text-decoration: line-through;">777 $</span> 599 $ + taxes</p>
+    <h2 data-reveal="" style="font-size: clamp(52px, 10vw, 140px); color: var(--bone-50); display: flex; flex-direction: column;">
+      <span>Arrête de deviner.</span>
+      <span>Commence par observer.</span>
+    </h2>
+    <div data-reveal="" data-reveal-delay="150">
+      <x-import component-from-global-scope="ParcoursHommesDesignSystem_b918b4.Button" variant="{{ finaleBtnVariant }}" size="lg" on-click="{{ fakeCheckout }}" hint-size="auto,54px">RÉSERVE TON PARCOURS</x-import>
+    </div>
+  </section>
+
+  <!-- ============ DISCLAIMER ============ -->
+  <section data-screen-label="Avis" style="padding: clamp(56px, 9vh, 96px) clamp(20px, 5vw, 56px); background: var(--surface-canvas);">
+    <div data-reveal="" style="max-width: 900px; margin: 0 auto; border-top: 2px solid var(--border-strong); padding-top: clamp(24px, 4vw, 40px);">
+      <p style="font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ember-400); margin-bottom: 16px;">08 — Avis de non-responsabilité</p>
+      <p style="color: var(--steel-300); font-size: 15px; line-height: 1.7;">L'ensemble des contenus, tests et accompagnements du Parcours Homme ont pour unique but d'informer et de soutenir ton mieux-être global par des approches naturelles et éducatives.</p>
+      <p style="color: var(--steel-300); font-size: 15px; line-height: 1.7; margin-top: 16px;">Émilie Gendron n'est pas médecin et n'est pas membre du Collège des médecins du Québec. Conformément à l'article 31 de la Loi médicale du Québec (RLRQ c. M-9), qui réserve aux seuls médecins le droit de diagnostiquer toute déficience de la santé, de prescrire des médicaments ou des traitements, et de traiter les maladies, aucun élément de ce parcours ne constitue un diagnostic, une prescription, un traitement ou une recommandation thérapeutique.</p>
+      <p style="color: var(--steel-300); font-size: 15px; line-height: 1.7; margin-top: 16px;">Ces informations et suggestions ne remplacent en aucun cas l'avis, le diagnostic ou le traitement d'un médecin ou d'un professionnel de la santé qualifié. Si tu présentes des symptômes persistants, consulte ton médecin.</p>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer style="display: flex; align-items: center; justify-content: center; text-align: center; gap: 10px; flex-wrap: wrap; padding: 32px clamp(20px, 5vw, 56px); border-top: 1px solid var(--border-subtle); background: var(--ink-950); flex-direction: column;">
+    <div style="display: flex; align-items: center; justify-content: center; gap: 18px; flex-wrap: wrap;">
+      <span style="font-family: var(--font-display); font-size: 15px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--bone-100);">Émilie Naturelle — Parcours Homme</span>
+      <span style="width: 20px; height: 1px; background: var(--border-strong);"></span>
+      <span style="font-family: var(--font-mono); font-size: 12px; color: var(--text-tertiary);">TESTE. COMPRENDS. TRANSFORME.</span>
+    </div>
+    <span style="font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.04em; color: var(--text-tertiary);">Accompagnement éducatif · Aucun diagnostic, aucune prescription · Art. 31 Loi médicale QC</span>
+  </footer>
+
+  <!-- ============ STICKY CTA ============ -->
+  <sc-if value="{{ stickyCta }}" hint-placeholder-val="{{ false }}">
+    <div id="stickyBar" style="position: fixed; z-index: 50; left: 0; right: 0; bottom: 0; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 12px clamp(16px, 4vw, 32px); background: rgba(17, 17, 19, 0.96); border-top: 1px solid var(--border-default); transform: translateY(110%); transition: transform 0.4s cubic-bezier(0.2, 0.6, 0.2, 1);">
+      <div style="display: flex; flex-direction: column; gap: 2px; min-width: 0;">
+        <span style="font-family: var(--font-mono); font-size: 13px; color: var(--bone-100); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">PARCOURS HOMME — <span style="text-decoration: line-through; color: var(--text-tertiary);">777 $</span> 599 $ + TX</span>
+        <span style="font-family: var(--font-mono); font-size: 10px; color: var(--text-tertiary); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Accompagnement éducatif · Aucun diagnostic</span>
+      </div>
+      <x-import component-from-global-scope="ParcoursHommesDesignSystem_b918b4.Button" variant="primary" size="md" on-click="{{ goPrix }}" hint-size="auto,42px">RÉSERVER</x-import>
+    </div>
+  </sc-if>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{
+  &quot;stickyCta&quot;: {&quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;Conversion&quot;},
+  &quot;finale&quot;: {&quot;editor&quot;: &quot;enum&quot;, &quot;options&quot;: [&quot;ember&quot;, &quot;ink&quot;], &quot;default&quot;: &quot;ember&quot;, &quot;tsType&quot;: &quot;'ember' | 'ink'&quot;, &quot;section&quot;: &quot;Style&quot;}
+}">
+class Component extends DCLogic {
+  componentDidMount() {
+    this.cleanupFns = [];
+    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const $$ = (sel) => Array.from(document.querySelectorAll(sel));
+    const ease = 'cubic-bezier(0.2, 0.6, 0.2, 1)';
+
+    // --- Hero: composed line-mask entrance ---
+    if (!reduced) {
+      $$('[data-hero-line]').forEach((el, i) => {
+        el.style.transform = 'translateY(110%)';
+        el.style.transition = 'transform 1s ' + ease;
+        setTimeout(() => { el.style.transform = 'none'; }, 180 + i * 160);
+      });
+      $$('[data-hero]').forEach((el, i) => {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(20px)';
+        el.style.transition = 'opacity 0.8s ' + ease + ', transform 0.8s ' + ease;
+        setTimeout(() => {
+          el.style.opacity = '1';
+          el.style.transform = 'none';
+        }, 620 + i * 110);
+      });
+    }
+
+    // --- Scroll reveals (short, dry) ---
+    const revealEls = $$('[data-reveal]');
+    if (!reduced) {
+      revealEls.forEach((el) => {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(24px)';
+        el.style.transition = 'opacity 0.6s ' + ease + ', transform 0.6s ' + ease;
+        const d = el.getAttribute('data-reveal-delay');
+        if (d) el.style.transitionDelay = d + 'ms';
+      });
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach((en) => {
+          if (en.isIntersecting) {
+            en.target.style.opacity = '1';
+            en.target.style.transform = 'none';
+            io.unobserve(en.target);
+          }
+        });
+      }, { threshold: 0.12 });
+      revealEls.forEach((el) => io.observe(el));
+      this.cleanupFns.push(() => io.disconnect());
+    }
+
+    // --- Counters (dry pose + count) ---
+    const cio = new IntersectionObserver((entries) => {
+      entries.forEach((en) => {
+        if (!en.isIntersecting) return;
+        cio.unobserve(en.target);
+        const el = en.target;
+        const target = parseInt(el.getAttribute('data-count'), 10);
+        const suffix = el.getAttribute('data-suffix') || '';
+        if (reduced || !target) {
+          el.textContent = target + suffix;
+          return;
+        }
+        const t0 = performance.now();
+        const dur = 1200;
+        const tick = (t) => {
+          const p = Math.min(1, (t - t0) / dur);
+          const e = 1 - Math.pow(1 - p, 3);
+          el.textContent = Math.round(target * e) + suffix;
+          if (p < 1) requestAnimationFrame(tick);
+        };
+        requestAnimationFrame(tick);
+      });
+    }, { threshold: 0.6 });
+    $$('[data-count]').forEach((el) => cio.observe(el));
+    this.cleanupFns.push(() => cio.disconnect());
+
+    // --- Scroll loop: parallax, pinned lines, rail fill, sticky bar ---
+    const lines = $$('[data-line]');
+    let ticking = false;
+    const onScroll = () => {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(() => {
+        ticking = false;
+        const y = window.scrollY;
+        const vh = window.innerHeight;
+
+        const hero = document.getElementById('heroInner');
+        const heroBg = document.getElementById('heroBg');
+        if (hero && !reduced) {
+          hero.style.transform = 'translateY(' + y * 0.28 + 'px)';
+          hero.style.opacity = String(Math.max(0, 1 - y / (vh * 0.85)));
+        }
+        if (heroBg && !reduced) {
+          heroBg.style.transform = 'translateY(' + y * 0.12 + 'px)';
+        }
+        const cue = document.getElementById('scrollCue');
+        if (cue) cue.style.opacity = y > 60 ? '0' : '1';
+
+        const probWrap = document.getElementById('probWrap');
+        if (probWrap) {
+          const r = probWrap.getBoundingClientRect();
+          const p = Math.min(1, Math.max(0, (vh * 0.88 - r.top) / (r.height + vh * 0.25)));
+          const n = lines.length;
+          lines.forEach((el, i) => {
+            const on = p >= (i + 0.45) / (n + 0.6);
+            const isFinal = el.hasAttribute('data-line-final');
+            el.style.color = on ? (isFinal ? 'var(--ember-500)' : 'var(--bone-100)') : 'var(--ink-700)';
+          });
+          const pctEl = document.getElementById('probPct');
+          if (pctEl) pctEl.textContent = String(Math.round(p * 100)).padStart(2, '0') + ' %';
+        }
+
+        const railWrap = document.getElementById('railWrap');
+        const railFill = document.getElementById('railFill');
+        if (railWrap && railFill) {
+          const r = railWrap.getBoundingClientRect();
+          const p = Math.min(1, Math.max(0, (vh * 0.75 - r.top) / r.height));
+          railFill.style.height = p * 100 + '%';
+        }
+
+        const bar = document.getElementById('stickyBar');
+        if (bar) {
+          const prix = document.getElementById('prix');
+          let hide = y < vh * 0.9;
+          if (prix) {
+            const pr = prix.getBoundingClientRect();
+            if (pr.top < vh && pr.bottom > 0) hide = true;
+          }
+          const doc = document.documentElement;
+          if (y + vh > doc.scrollHeight - vh * 0.9) hide = true;
+          bar.style.transform = hide ? 'translateY(110%)' : 'translateY(0)';
+        }
+      });
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll, { passive: true });
+    onScroll();
+    this.cleanupFns.push(() => {
+      window.removeEventListener('scroll', onScroll);
+      window.removeEventListener('resize', onScroll);
+    });
+  }
+
+  componentWillUnmount() {
+    (this.cleanupFns || []).forEach((f) => f());
+  }
+
+  renderVals() {
+    const scrollTo = (id) => () => {
+      const el = document.getElementById(id);
+      if (el) {
+        const top = el.getBoundingClientRect().top + window.scrollY;
+        window.scrollTo({ top: top, behavior: 'smooth' });
+      }
+    };
+    const finale = this.props.finale ?? 'ember';
+    return {
+      goPrix: scrollTo('prix'),
+      goTests: scrollTo('tests'),
+      fakeCheckout: () => { window.open('https://buy.stripe.com/6oUaEQaEw7W86HC0VA6kg05', '_blank'); },
+      toggleFaq: (e) => {
+        const item = e.currentTarget.closest('[data-faq]');
+        if (!item) return;
+        const body = item.querySelector('[data-faq-body]');
+        const arrow = item.querySelector('[data-faq-arrow]');
+        const open = body.style.maxHeight && body.style.maxHeight !== '0px';
+        if (open) {
+          body.style.maxHeight = '0px';
+          body.style.opacity = '0';
+          if (arrow) arrow.style.transform = 'none';
+        } else {
+          body.style.maxHeight = body.scrollHeight + 'px';
+          body.style.opacity = '1';
+          if (arrow) arrow.style.transform = 'rotate(45deg)';
+        }
+      },
+      stickyCta: this.props.stickyCta ?? true,
+      finaleBg: finale === 'ember' ? 'var(--ember-500)' : 'var(--ink-950)',
+      finaleSub: finale === 'ember' ? 'rgba(250, 247, 239, 0.75)' : 'var(--text-secondary)',
+      finaleBtnVariant: finale === 'ember' ? 'onPaper' : 'primary'
+    };
+  }
+}
+</script>
+</body>
+</html>

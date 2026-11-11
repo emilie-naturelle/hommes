@@ -1,0 +1,48 @@
+/* ============================================================
+   PARCOURS HOMMES — TYPE TOKENS
+   Display: Anton — tall, heavy, condensed all-caps slab-grotesk.
+   Matches the brand reference lockups (MASCULIN ANCRÉ, PARCOURS
+   HOMMES). Placeholder from Google Fonts until real font files
+   are supplied — see readme.md "Fonts" note.
+   Body: Archivo — sturdy grotesk, wide weight range, pairs
+   cleanly with Anton without competing for attention.
+   Mono: Space Mono — for biomarker figures, data tables, specs.
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Archivo:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500&family=Space+Mono:wght@400;700&display=swap');
+
+:root {
+  --font-display: 'Anton', 'Arial Narrow Bold', sans-serif;
+  --font-body: 'Archivo', 'Helvetica Neue', Arial, sans-serif;
+  --font-mono: 'Space Mono', 'Courier New', monospace;
+
+  /* Display scale — condensed caps, tight leading, tight tracking */
+  --text-display-xl: 96px;
+  --text-display-lg: 72px;
+  --text-display-md: 56px;
+  --text-display-sm: 40px;
+  --text-display-xs: 28px;
+  --leading-display: 0.96;
+  --tracking-display: 0.002em;
+  --tracking-display-loose: 0.06em; /* for short eyebrow-style display lines */
+
+  /* Body scale */
+  --text-body-xl: 22px;
+  --text-body-lg: 18px;
+  --text-body-md: 16px;
+  --text-body-sm: 14px;
+  --text-body-xs: 12px;
+  --leading-body: 1.5;
+  --leading-body-tight: 1.25;
+
+  /* Mono / data scale */
+  --text-mono-lg: 32px;
+  --text-mono-md: 18px;
+  --text-mono-sm: 13px;
+
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+  --weight-heavy: 800;
+}
